@@ -1,0 +1,159 @@
+body {
+    background-color: #181818;
+    font-family: 'Sofia Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    color: white;
+    font-weight: 700;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.bundle-off {
+    background-color: #be58cc;
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+    border-bottom: 2px solid #ffffff;
+    padding: 5px;
+}
+
+.bundle-off-text {
+    color: white;
+    font-size: 20px;
+}
+
+.bundle-off-1 {
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+    background-color: #f5ae16;
+    border-bottom: 2px solid #ffffff;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.bundle-quantidade {
+    float: right;
+    background-color: #5f1968;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.bundle-quantidade-1 {
+    float: right;
+    background-color: #9e7316;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.loja-fundo {
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+}
+
+.loja-bar,
+.bundle-bar {
+    background-color: #252525;
+    width: 100%;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    padding: 10px 0;
+    border-top: 2px solid #ffffff;
+}
+
+.bundle {
+    background-color: #3d3d3d;
+}
+
+.loja-title {
+    color: white;
+    font-size: 100%;
+    text-transform: uppercase;
+}
+
+.loja-price {
+    color: rgb(185, 185, 185);
+    font-size: 16px;
+}
+
+#epic {
+    background-color: #be58cc;
+}
+
+#icon {
+    background-color: aqua;
+    background-image: url("./assets/series-icon.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#legendary {
+    background-color: #f5ae16;
+}
+
+#rare {
+    background-color: #00c3ff;
+}
+
+#uncommon {
+    background-color: #409c24;
+}
+
+.modal-content {
+    background-color: #252525;
+}
+
+.modal-title {
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.modal-subtitle {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.modal-description {
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.modal-raridade {
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-close {
+    filter: invert(100%);
+    opacity: 1;
+}
+
+.fechar {
+    color: rgb(36, 36, 36);
+    background-color: white;
+}
+
+hr {
+    border: 1px solid white;
+    opacity: 1;
+}
