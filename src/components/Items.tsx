@@ -29,7 +29,7 @@ export default function Items(item:any) {
             <MDBModalBody>
               <div className="row m-3 d-flex justify-content-center">
                 <div className="col d-flex align-self-center justify-content-center">
-                  <img width="100%" src={item_info.items[0].images.featured} />
+                  {item_info.items[0].images.featured != null ? (<img width="100%" src={item_info.items[0].images.featured} />) : (<img width="70%" src={item_info.items[0].images.icon} />)}
                 </div>
                 <div className="col align-self-center">
                   <div className="d-flex justify-content-center modal-description"><b>Item:&nbsp;</b> {item_info.items[0].name}</div>

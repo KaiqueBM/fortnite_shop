@@ -52,7 +52,7 @@ const Bundles = () => {
                             ) : 
                             (
                                 <div className="bundle-off-1">
-                                    <div className="text-center bundle-off-text"><span>Novo!</span><div className="bundle-quantidade-1"><span>{loja.items.length}</span></div></div>
+                                    <div className="text-center bundle-off-text"><span>{loja.bundle.info}</span><div className="bundle-quantidade-1"><span>{loja.items.length}</span></div></div>
                                 </div>
                             )
                             }

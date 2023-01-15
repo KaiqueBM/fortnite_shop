@@ -90,6 +90,10 @@ body {
 
 #epic {
     background-color: #be58cc;
+    background-image: url("./assets/roxo-icon.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #icon {
@@ -100,16 +104,92 @@ body {
     background-size: cover;
 }
 
+#lava {
+    background-color: aqua;
+    background-image: url("./assets/lava-icon.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#shadow {
+    background-color: aqua;
+    background-image: url("./assets/shadow-icon.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#marvel {
+    background-color: aqua;
+    background-image: url("./assets/marvel-icon.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#slurp {
+    background-color: aqua;
+    background-image: url("./assets/slurp-icon.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#dc {
+    background-color: aqua;
+    background-image: url("./assets/dc-icon.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#dark {
+    background-color: aqua;
+    background-image: url("./assets/dark-icon.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#frozen {
+    background-color: aqua;
+    background-image: url("./assets/frozen-icon.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#star-wars {
+    background-color: aqua;
+    background-image: url("./assets/sw-icon.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 #legendary {
     background-color: #f5ae16;
+    background-image: url("./assets/laranja-icon.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #rare {
     background-color: #00c3ff;
+    background-image: url("./assets/azul-icon.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #uncommon {
     background-color: #409c24;
+    background-image: url("./assets/verde-icon.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .modal-content {
