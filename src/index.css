@@ -5,6 +5,10 @@ body {
     padding: 0;
 }
 
+.container-fluid {
+    --bs-gutter-x: 0rem !important;
+}
+
 .title {
     color: white;
     font-weight: 700;
@@ -20,7 +24,7 @@ body {
 }
 
 .bundle-off {
-    background-color: #be58cc;
+    background-color: #272727;
     border-start-end-radius: 10px;
     border-start-start-radius: 10px;
     border-bottom: 2px solid #ffffff;
@@ -44,7 +48,7 @@ body {
 
 .bundle-quantidade {
     float: right;
-    background-color: #5f1968;
+    background-color: #0f0f0f;
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -59,8 +63,8 @@ body {
 }
 
 .loja-fundo {
-    border-start-end-radius: 10px;
-    border-start-start-radius: 10px;
+    border-start-end-radius: 10px !important;
+    border-start-start-radius: 10px !important;
 }
 
 .loja-bar,
@@ -88,108 +92,69 @@ body {
     font-size: 16px;
 }
 
-#epic {
-    background-color: #be58cc;
-    background-image: url("./assets/roxo-icon.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.loja-bar#epic,
+.bundle-bar#epic {
+    border-top: 5px solid #be58cc;
 }
 
-#icon {
-    background-color: aqua;
-    background-image: url("./assets/series-icon.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.loja-bar#icon,
+.bundle-bar#icon {
+    border-top: 5px solid #00c3ff;
 }
 
-#lava {
-    background-color: aqua;
-    background-image: url("./assets/lava-icon.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.loja-bar#lava,
+.bundle-bar#lava {
+    border-top: 5px solid #d83c0d;
 }
 
-#shadow {
-    background-color: aqua;
-    background-image: url("./assets/shadow-icon.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.loja-bar#shadow,
+.bundle-bar#shadow {
+    border-top: 5px solid rgb(0, 0, 0);
 }
 
-#marvel {
-    background-color: aqua;
-    background-image: url("./assets/marvel-icon.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.loja-bar#marvel,
+.bundle-bar#marvel {
+    border-top: 5px solid #a32424;
 }
 
-#slurp {
-    background-color: aqua;
-    background-image: url("./assets/slurp-icon.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.loja-bar#slurp,
+.bundle-bar#slurp {
+    border-top: 5px solid #0e557e;
 }
 
-#dc {
-    background-color: aqua;
-    background-image: url("./assets/dc-icon.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.loja-bar#dc,
+.bundle-bar#dc {
+    border-top: 5px solid #353399;
 }
 
-#dark {
-    background-color: aqua;
-    background-image: url("./assets/dark-icon.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.loja-bar#dark,
+.bundle-bar#dark {
+    border-top: 5px solid #4d1666;
 }
 
-#frozen {
-    background-color: aqua;
-    background-image: url("./assets/frozen-icon.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.loja-bar#frozen,
+.bundle-bar#frozen {
+    border-top: 5px solid #2f88b1;
 }
 
-#star-wars {
-    background-color: aqua;
-    background-image: url("./assets/sw-icon.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.loja-bar#star-wars,
+.bundle-bar#star-wars {
+    border-top: 5px solid #1e1d3a;
 }
 
-#legendary {
-    background-color: #f5ae16;
-    background-image: url("./assets/laranja-icon.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.loja-bar#legendary,
+.bundle-bar#legendary {
+    border-top: 5px solid #ebb916;
 }
 
-#rare {
-    background-color: #00c3ff;
-    background-image: url("./assets/azul-icon.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.loja-bar#rare,
+.bundle-bar#rare {
+    border-top: 5px solid #1e6ed8;
 }
 
-#uncommon {
-    background-color: #409c24;
-    background-image: url("./assets/verde-icon.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.loja-bar#uncommon,
+.bundle-bar#uncommon {
+    border-top: 5px solid #10aa10;
 }
 
 .modal-content {
@@ -236,4 +201,28 @@ body {
 hr {
     border: 1px solid white;
     opacity: 1;
+}
+
+.header {
+    background-color: #252525;
+    width: 100%;
+    margin: 0px !important;
+    height: 100px;
+    border-bottom: 2px solid white;
+}
+
+.btn-loja {
+    background-color: #181818;
+    border: 3px solid white;
+    border-radius: 100px;
+    width: 150px;
+    padding: 10px 2px;
+    color: white;
+    transition: ease 0.3s;
+}
+
+.btn-loja:hover {
+    background-color: white;
+    color: #181818;
+    border: 3px solid #181818;
 }

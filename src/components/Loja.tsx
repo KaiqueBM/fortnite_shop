@@ -3,11 +3,13 @@ import apiFetch from "../axios/config";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Items from "./Items";
+import { Imagem } from "./Imagem";
 
 
 const Loja = (tipo: any) => {
 
     const [loja, setLoja] = useState([])
+    const [trocaImagem, setTrocaImagem] = useState([])
 
     //console.log(tipo.tipo)
     const loja_tipo = tipo.tipo
@@ -21,6 +23,7 @@ const Loja = (tipo: any) => {
             
             
             const items_all = daily_entries.filter(items_filter);
+            console.log(items_all)
             setLoja(items_all)
 
         } catch (error) {
@@ -44,7 +47,8 @@ const Loja = (tipo: any) => {
             return props.data.featured.entries
         if (tipo == "daily")
             return props.data.daily.entries
-    }   
+    } 
+
 
     return ( 
         <div className="container-fluid">
@@ -55,10 +59,8 @@ const Loja = (tipo: any) => {
                     loja.map((loja: any, index: number) => (
                         
                         <div className="col-lg-2 col-12 m-1 loja" key={index}>
-                            <div className="loja-fundo d-flex justify-content-center" id={loja.items[0].rarity.value}>
-                                <img width="70%" className="" src={loja.items[0].images.icon} />
-                            </div>
-                            <div className="loja-bar">
+                            <Imagem img={loja} />
+                            <div className="loja-bar" id={loja.items[0].rarity.value}>
                                 <div className="text-center loja-title">{loja.items[0].name} </div>
                                 <div className="text-center loja-price" >{loja.finalPrice} v-bucks</div>
                                 <Items all={loja} />

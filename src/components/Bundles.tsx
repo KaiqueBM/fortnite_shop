@@ -58,10 +58,10 @@ const Bundles = () => {
                             }
 
                             
-                            <div className="bundle d-flex justify-content-center">
-                                <img width="70%" className="" src={loja.bundle.image} />
+                            <div className="d-flex justify-content-center" id={loja.items[0].rarity.value}>
+                                <img width="100%" className="" src={loja.newDisplayAsset.materialInstances[0].images.Background != null ? (loja.newDisplayAsset.materialInstances[0].images.Background) : (loja.bundle.image)} />
                             </div>
-                            <div className="bundle-bar">
+                            <div className="bundle-bar" id={loja.items[0].rarity.value}>
                                 <div className="text-center loja-title">{loja.bundle.name}</div>
                                 <div className="text-center loja-price"><b>{loja.finalPrice}</b> V-Bucks </div>
                                 
