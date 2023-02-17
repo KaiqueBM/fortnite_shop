@@ -20,13 +20,13 @@ export default function Items(item:any) {
 
   return (
     <>
-      <div onClick={toggleShow} className="loja-price text-center">Mais informações</div>
+      <div onClick={toggleShow} className="loja-price text-center cursor-pointer"><span className='p-2'>Mais informações</span></div>
       <MDBModal show={basicModal} setShow={setBasicModal} tabIndex='-1'>
         <MDBModalDialog size="fullscreen">
           <MDBModalContent>
             <MDBModalHeader>
-              <MDBModalTitle className='d-flex justify-content-center'>{item_info.items[0].name}</MDBModalTitle>
-              <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>
+              <MDBModalTitle className='d-flex justify-content-center'>DETALHES</MDBModalTitle>
+              <MDBBtn className='btn-close p-4' color='none' onClick={toggleShow}></MDBBtn>
             </MDBModalHeader>
             <MDBModalBody>
 
@@ -34,10 +34,10 @@ export default function Items(item:any) {
 
             <div className="row">
               <div className="col">
-                <div className="d-flex justify-content-center modal-description"><b>Lançado:&nbsp;</b> Capítulo {item_info.items[0].introduction.chapter} - temporada {item_info.items[0].introduction.season}</div>
-                <div className="d-flex justify-content-center modal-description"><b>Quantidade de vezes que apareceu na loja:&nbsp;</b> {item_info.items[0].shopHistory.length - 1}</div>
-                <div className="d-flex justify-content-center modal-description"><b>Ultima vez foi em:&nbsp;</b> {item_info.items[0].shopHistory[item_info.items[0].shopHistory.length-2]}</div>
-                <div className="d-flex justify-content-center modal-description"><b>Preço:&nbsp;</b> {item_info.finalPrice} v-bucks</div>
+                <div className="justify-content-center modal-description"><b>Lançado:&nbsp;</b> Capítulo {item_info.items[0].introduction.chapter} - temporada {item_info.items[0].introduction.season}</div>
+                <div className="justify-content-center modal-description"><b>Quantidade de vezes que apareceu na loja:&nbsp;</b> {item_info.items[0].shopHistory.length - 1}</div>
+                <div className="justify-content-center modal-description"><b>Ultima vez foi em:&nbsp;</b> {item_info.items[0].shopHistory[item_info.items[0].shopHistory.length-2]}</div>
+                <div className="justify-content-center modal-description"><b>Preço:&nbsp;</b> {item_info.finalPrice} v-bucks</div>
               </div>
             </div>
             

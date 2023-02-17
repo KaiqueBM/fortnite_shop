@@ -9,10 +9,10 @@ const Home = () => {
     return (
         <div className="container-fluid">
             <div className='container-fluid header d-flex align-items-center'>
-                <div className='container d-flex flex-row justify-content-between'>  
-                    <a href='#bundles'><button className='btn-loja'>BUNDLES</button></a>
-                    <a href='#featured'><button className='btn-loja'>FEATURED</button></a>
-                    <a href='#daily'><button className='btn-loja'>DAILY</button></a>
+                <div className='container d-flex flex-md-row flex-column flex-wrap justify-content-between align-items-center'>  
+                    <a href='#bundles'><button className='btn-loja m-2'>BUNDLES</button></a>
+                    <a href='#featured'><button className='btn-loja m-2'>FEATURED</button></a>
+                    <a href='#daily'><button className='btn-loja m-2'>DAILY</button></a>
                 </div>
             </div>
             

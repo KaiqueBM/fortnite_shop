@@ -12,8 +12,9 @@ const Bundles = () => {
 
     const getLoja = async () => {
         try {
-            const response = await apiFetch.get("/combined")
+            const response = await apiFetch.get("/combined?language=pt-BR")
             const data = response.data;
+            console.log(data)
             const daily_entries = data.data.featured.entries
             const bundles = daily_entries.filter(bundles_filter);
             setLoja2(bundles)
@@ -38,10 +39,10 @@ const Bundles = () => {
         <div className="container-fluid">
             
             <div className="subtitle text-center mt-2 mb-2">Bundles</div>
-            <div className="row d-flex justify-content-center">
+            <div className="row d-flex flex-wrap justify-content-center m-2">
                 {loja2.length === 0 ? (<p>Carregando...</p>) : (
                     loja2.map((loja: any, index: number) => (
-                        <div className="col-lg-2 col-12 m-1" key={index}>
+                        <div className="col-xl-3 col-md-6 gap-2 mb-2" key={index}>
                             {loja.regularPrice-loja.finalPrice != 0 ? 
                             (
                                 <div className="bundle-off">

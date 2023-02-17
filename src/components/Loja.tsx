@@ -14,7 +14,7 @@ const Loja = (tipo: any) => {
 
     const getLoja = async () => {
         try {
-            const response = await apiFetch.get("/combined")
+            const response = await apiFetch.get("/combined?language=pt-BR")
             const data = response.data;
             const daily_entries = tipo_filter(data, loja_tipo)
             
@@ -48,13 +48,13 @@ const Loja = (tipo: any) => {
 
     return ( 
         <div className="container-fluid">
-            <div className="subtitle text-center mt-5 mb-2">{loja_tipo}</div>
+            <div className="subtitle text-center mt-5 mb-2 ">{loja_tipo}</div>
 
-            <div className="row d-flex justify-content-center">
+            <div className="row d-flex flex-wrap justify-content-center m-2">
                 {loja.length === 0 ? (<p>Carregando...</p>) : (
                     loja.map((loja: any, index: number) => (
                         
-                        <div className="col-lg-2 col-12 m-1 loja" key={index}>
+                        <div className="col-xl-3 col-md-6 gap-2 mb-2 loja" key={index}>
                             <Imagem img={loja} />
                             <div className="loja-bar" id={loja.items[0].rarity.value}>
                                 <div className="text-center loja-title">{loja.items[0].name} </div>

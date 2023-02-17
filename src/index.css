@@ -207,7 +207,7 @@ hr {
     background-color: #252525;
     width: 100%;
     margin: 0px !important;
-    height: 100px;
+    padding: 15px;
     border-bottom: 2px solid white;
 }
 
@@ -225,4 +225,20 @@ hr {
     background-color: white;
     color: #181818;
     border: 3px solid #181818;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.cursor-pointer span:hover {
+    background-color: #3d3d3d;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.loja img {
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
 }
