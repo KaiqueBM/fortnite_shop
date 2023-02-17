@@ -13,7 +13,7 @@ export function Imagem(loja: any){
 
     return (
         <div className="loja-fundo d-flex justify-content-center" id={loja.img.items[0].rarity.value}>
-            <img width="100%" className="" src={loja.img.newDisplayAsset.materialInstances[0].images.Background != null ? (loja.img.newDisplayAsset.materialInstances[0].images.Background) : (loja.img.items[0].image.icon)} />
+            <img width="100%" className="" src={loja.img.newDisplayAsset.materialInstances[0].images.Background != null ? (loja.img.newDisplayAsset.materialInstances[0].images.Background) : (loja.img.items[0].images.icon)} />
         </div>
     )
 }

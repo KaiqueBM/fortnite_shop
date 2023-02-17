@@ -15,7 +15,6 @@ import {
 
 export default function Items(item:any) {
   const [basicModal, setBasicModal] = useState(false);
-  //console.log(item.all)
   const item_info = item.all
   const toggleShow = () => setBasicModal(!basicModal);
 

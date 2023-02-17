@@ -9,21 +9,17 @@ import { Imagem } from "./Imagem";
 const Loja = (tipo: any) => {
 
     const [loja, setLoja] = useState([])
-    const [trocaImagem, setTrocaImagem] = useState([])
 
-    //console.log(tipo.tipo)
     const loja_tipo = tipo.tipo
 
     const getLoja = async () => {
         try {
             const response = await apiFetch.get("/combined")
             const data = response.data;
-            //console.log(data.data)
             const daily_entries = tipo_filter(data, loja_tipo)
             
             
             const items_all = daily_entries.filter(items_filter);
-            console.log(items_all)
             setLoja(items_all)
 
         } catch (error) {

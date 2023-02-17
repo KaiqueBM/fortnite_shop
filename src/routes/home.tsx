@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Loja from "../components/Loja"
 import Bundles from "../components/Bundles";
+import Teste from '../components/Teste';
 
 const Home = () => {
 
