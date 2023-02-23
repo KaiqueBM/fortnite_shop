@@ -14,7 +14,6 @@ const Bundles = () => {
         try {
             const response = await apiFetch.get("/combined?language=pt-BR")
             const data = response.data;
-            console.log(data)
             const daily_entries = data.data.featured.entries
             const bundles = daily_entries.filter(bundles_filter);
             setLoja2(bundles)
