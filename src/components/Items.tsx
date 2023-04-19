@@ -20,6 +20,7 @@ export default function Items(item:any) {
 
   return (
     <>
+    
       <div onClick={toggleShow} className="loja-price text-center cursor-pointer"><span className='p-2'>Mais informações</span></div>
       <MDBModal show={basicModal} setShow={setBasicModal} tabIndex='-1'>
         <MDBModalDialog size="fullscreen">
@@ -31,16 +32,16 @@ export default function Items(item:any) {
             <MDBModalBody>
 
               <Item_info props={item_info.items} />
-
+              {item_info === 0 ? (<p>Carregando...</p>) : (
             <div className="row">
               <div className="col">
-                <div className="justify-content-center modal-description"><b>Lançado:&nbsp;</b> Capítulo {item_info.items[0].introduction.chapter} - temporada {item_info.items[0].introduction.season}</div>
+                <div className="justify-content-center modal-description"><b>Lançado:&nbsp;</b> {item_info.items[0].introduction == null ? (<>Sem informação</>) : (<>Capítulo {item_info.items[0].introduction.chapter} - temporada {item_info.items[0].introduction.season}</>)} </div>
                 <div className="justify-content-center modal-description"><b>Quantidade de vezes que apareceu na loja:&nbsp;</b> {item_info.items[0].shopHistory.length - 1}</div>
                 <div className="justify-content-center modal-description"><b>Ultima vez foi em:&nbsp;</b> {item_info.items[0].shopHistory[item_info.items[0].shopHistory.length-2]}</div>
                 <div className="justify-content-center modal-description"><b>Preço:&nbsp;</b> {item_info.finalPrice} v-bucks</div>
               </div>
             </div>
-            
+            )}
             
 
             </MDBModalBody>
