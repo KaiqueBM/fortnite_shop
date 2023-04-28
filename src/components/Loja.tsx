@@ -3,7 +3,6 @@ import apiFetch from "../axios/config";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Items from "./Items";
-import { Imagem } from "./Imagem";
 
 
 const Loja = (tipo: any) => {
