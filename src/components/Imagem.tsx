@@ -1,13 +1,14 @@
 import { useState } from "react"
 
-export function Imagem(loja: any){
-    const [trocaImagem, setTrocaImagem] = useState<any>([loja.img.newDisplayAsset.materialInstances[0].images.Background])
-    function trocarImagem(loja: any) {
-        const maximo = loja.img.newDisplayAsset.materialInstances.length
-        for(let i=0; i<= maximo; i++){
-            setTimeout(() => {
-                setTrocaImagem(loja.img.newDisplayAsset.materialInstances[i].images.Background)
-            }, 5000)
+export function Imagem(loja1: any){
+    console.log(loja1)
+    const loja = loja1.filter(items_filter);
+    console.log(loja)
+
+    function items_filter(props: any) {
+        console.log(props)
+        if (props.img.newDisplayAsset != null) {
+            return props;
         }
     }
 

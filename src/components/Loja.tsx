@@ -21,6 +21,7 @@ const Loja = (tipo: any) => {
             
             const items_all = daily_entries.filter(items_filter);
             setLoja(items_all)
+            console.log(items_all)
 
         } catch (error) {
             console.log(error)
@@ -55,7 +56,10 @@ const Loja = (tipo: any) => {
                     loja.map((loja: any, index: number) => (
                         
                         <div className="col-xl-3 col-md-6 gap-2 mb-2 loja" key={index}>
-                            <Imagem img={loja} />
+                                                            <div className="loja-fundo d-flex justify-content-center" id={loja.items[0].rarity.value}>
+                                                                {loja.newDisplayAsset == null ? (<img width="100%" className="" src={loja.items[0].images.featured} />) : (<img width="100%" className="" src={loja.newDisplayAsset.materialInstances[0].images.Background != null ? (loja.newDisplayAsset.materialInstances[0].images.Background) : (loja.newDisplayAsset.materialInstances[0].images.OfferImage)} />)}
+                                                            
+                                        </div>
                             <div className="loja-bar" id={loja.items[0].rarity.value}>
                                 <div className="text-center loja-title">{loja.items[0].name} </div>
                                 <div className="text-center loja-price" >{loja.finalPrice} v-bucks</div>
