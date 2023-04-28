@@ -20,7 +20,6 @@ const Loja = (tipo: any) => {
             
             const items_all = daily_entries.filter(items_filter);
             setLoja(items_all)
-            console.log(items_all)
 
         } catch (error) {
             console.log(error)
