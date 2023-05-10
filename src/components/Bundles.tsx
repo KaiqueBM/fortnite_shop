@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import apiFetch from "../axios/config";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import vbucks from '../assets/vbucks.webp'
 
 import Items from "./Items";
 
@@ -61,7 +62,7 @@ const Bundles = () => {
                             </div>
                             <div className="bundle-bar" id={loja.items[0].rarity.value}>
                                 <div className="text-center loja-title">{loja.bundle.name}</div>
-                                <div className="text-center loja-price"><b>{loja.finalPrice}</b> V-Bucks </div>
+                                <div className="text-center loja-price"><img width="20px" src={vbucks} /><b>{loja.finalPrice}</b> V-Bucks </div>
                                 
                                 <Items all={loja} />
                             </div>
