@@ -8,18 +8,11 @@ const Home = () => {
 
     return (
         <div className="container-fluid">
-            <div className='container-fluid header d-flex align-items-center'>
-                <div className='container d-flex flex-md-row flex-column flex-wrap justify-content-between align-items-center'>  
-                    <a href='#bundles'><button className='btn-loja m-2'>BUNDLES</button></a>
-                    <a href='#featured'><button className='btn-loja m-2'>FEATURED</button></a>
-                    <a href='#daily'><button className='btn-loja m-2'>DAILY</button></a>
-                </div>
-            </div>
             
 
             
 
-            <div className="title text-center mt-3">loja</div>
+            <div className="title text-center mt-3">Loja do fortnite</div>
 
             <div id='bundles'></div>
             <Bundles />

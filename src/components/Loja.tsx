@@ -81,7 +81,6 @@ const Loja = (tipo: any) => {
 
     return (
         <div className="container-fluid">
-            <div className="subtitle text-center mt-5 mb-2 ">{loja_tipo}</div>
                 {loja && abas && (
                     <>
                         {abas.map((aba:string, index:number)=>(

@@ -38,8 +38,9 @@ const Bundles = () => {
     return ( 
         <div className="container-fluid">
             
-            <div className="subtitle text-center mt-2 mb-2">Bundles</div>
+            
             <div className="row d-flex flex-wrap justify-content-center m-2">
+            <div className="subtitle text-start mt-2 mb-2">Bundles</div>
                 {loja2.length === 0 ? (<p>Carregando...</p>) : (
                     loja2.map((loja: any, index: number) => (
                         <div className="col-xl-3 col-md-6 gap-2 mb-2" key={index}>
